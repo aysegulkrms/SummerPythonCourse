@@ -14,3 +14,22 @@
 # The program should also display the total amount of the purchase after the discount
 
 
+packages = int(input("Please enter the number of packages: "))
+price = 99
+
+if packages < 10:
+    discount = 0
+elif packages < 20:
+    discount = 0.1
+elif packages < 50:
+    discount = 0.2
+elif packages < 100:
+    discount = 0.3
+else:
+    discount = 0.4
+
+sub_total = price * packages
+discount_amount = discount * sub_total
+total = sub_total - discount_amount
+
+print("Total is", total)
