@@ -76,7 +76,7 @@ list_2 = []
 print(list_2)
 
 # Second Solution
-for i in range(0,41,2):
+for i in range(0, 41, 2):
     list_2.append(i)
 print(list_2)
 
@@ -84,3 +84,10 @@ print(list_2)
 # use the list from 0-41
 # make a new list which will store square of elements of previous list
 
+print()
+list_3 = []
+
+for i in list_2:
+    list_3.append(i ** 2)
+
+print(list_3)
