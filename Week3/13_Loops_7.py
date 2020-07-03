@@ -9,3 +9,17 @@ for i in range(10, 31, 5):
 # Take numbers from the user until the user says no
 # Ask to say yes or no after every number input.
 # Print the average and sum of all numbers entered
+
+add = 0
+count = 0
+
+while True:
+    number = int(input("Enter a number "))
+    count = count + 1
+    add = add + number
+    ask = input("Do you want to continue entering numbers? ").title()
+    if ask == "No" or ask == 'N':
+        break
+
+print("print average", add/count)
+
